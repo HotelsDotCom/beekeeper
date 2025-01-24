@@ -268,6 +268,8 @@ To access an endpoint when running in a Docker container, the port must be publi
 | `Metastore-uri`                     | Yes      | URI of the Hive Metastore where tables to be cleaned-up are located. |
 | `old-data-cleanup-cron`             | No       | Cron expression which sets the schedule for the cleanup of old rows in the `housekeepin_metadata` table. Default is `0 0 13 * * ?` (every day at 1pm). |
 | `old-data-retention-period-days`    | No       | Number of days to keep old rows in the `housekeepin_metadata` table after their corresponding data is deleted. Default is `182` (6 months). |
+| `delete-empty-table-enabled`        | No       | Enable to allow tables with no partitions to be deleted. Default is `false`. |
+
 
 ## Beekeeper-API
 
